@@ -1,16 +1,19 @@
-<div class = "container">
-  <ul id="translation_options">
-    <li><a href="#">Yoda</a></li>
-    <li><a href="#">Pig Latin</a></li>
-    <li><a href="#">Elvish</a></li>
-    <li><a href="#">Furbish</a></li>
-    <li><a href="#">Nadsat</a></li>
-  </ul>
-  <form  action = "#" method = "#">
-    <textarea></textarea><br>
-    <input type = "submit" value = "Macaron It">
-  </form>
-  <div id="translation">
+<main class = "container">
+<% if logged_in? %>
+  <section class="left">
+      <form id="translate" action = "/" method = "post">
+        <textarea name="original_text"></textarea><br>
+        <input type = "submit" value = "Yoda It">
+      </form>
+    </section>
 
-  </div>
-</div>
+    <section class="right">
+      <div id="translation">
+
+      </div>
+    </section>
+ <% else %>
+  <p id="register_me">Hey! You should register. And login.</p>
+<% end %>
+</main>
+
