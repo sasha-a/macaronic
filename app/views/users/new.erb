@@ -1,0 +1,13 @@
+<div class = "container">
+  <% if @errors %>
+    <% @errors.each do |msg| %>
+      <%= msg %>
+    <% end %>
+  <% end %>
+  <form action = "/users" method="post">
+    username: <input type="text" name="user[username]"><br>
+    email: <input type="email" name="user[email]"><br>
+    password: <input type="password" name="user[password]">
+    <input type="submit" value="Register">
+  </form>
+</div>

@@ -1,0 +1,100 @@
+body {
+  background-image: url('/img/macaroni_background.jpg');
+}
+
+header {
+  margin: 20px auto;
+  width: 50%;
+  padding: 20px 20px 20px 20px;
+  border: 1px dotted orange;
+  background-color: #FFF;
+}
+
+h1 {
+  display: inline;
+}
+h2 {
+  display: inline;
+}
+#navigation {
+  float: right;
+  width: 30%;
+  padding: 10px 0;
+}
+
+#navigation li {
+  display: inline;
+  float: left;
+  width: 30%;
+}
+
+#logout_button {
+  margin: 0;
+  padding: 0;
+}
+
+#logout_button .logout {
+  float: right;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 1px solid white;
+}
+
+.container {
+  margin: 20px auto;
+  width: 50%;
+  padding: 20px 20px 20px 20px;
+  border: 1px dotted orange;
+  background-color: #FFF;
+}
+
+th {
+  text-align: left;
+}
+
+/*h1 {
+  text-align: center;
+}*/
+
+
+input[type=text], input[type=email], input[type=password] {
+  width: 30%;
+  padding: 2px 2px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+textarea {
+    width: 40%;
+    height: 300px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 1.25em;
+}
+
+button {
+  background-color: lightgreen;
+  border: none;
+  color: black;
+  padding: 8px 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#translation_options {
+  width: 100%;
+}
+
+#translation_options li {
+  display: inline;
+  padding: 0 20px 0 0;
+}
