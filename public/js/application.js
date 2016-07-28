@@ -4,4 +4,16 @@ $(document).ready(function() {
   // when we try to bind to them
 
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  $('#translate').on('submit', function(event) {
+    event.preventDefault();
+    var data = $('#translate').serialize();
+    $.ajax({
+      method: 'post',
+      url: '/',
+      data: data
+    })
+    .done(function(response) {
+     $('#translation').append(response);
+    })
+  })
 });

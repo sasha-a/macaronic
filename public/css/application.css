@@ -1,3 +1,7 @@
+.title {
+  color: #E47852;
+}
+
 body {
   background-image: url('/img/macaroni_background.jpg');
 }
@@ -13,9 +17,18 @@ header {
 h1 {
   display: inline;
 }
+
 h2 {
   display: inline;
 }
+
+.home_screen {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/cartoon_macaroni.jpg');
+}
+
 #navigation {
   float: right;
   width: 30%;
@@ -28,9 +41,19 @@ h2 {
   width: 30%;
 }
 
+a {
+color: #DE9331;
+text-decoration: none;
+}
+
+a:visited {
+  color: #bf8900
+}
+
 #logout_button {
   margin: 0;
   padding: 0;
+  color: #bf8900;
 }
 
 #logout_button .logout {
@@ -44,19 +67,38 @@ h2 {
 .container {
   margin: 20px auto;
   width: 50%;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 360px 20px;
   border: 1px dotted orange;
   background-color: #FFF;
+}
+
+.left {
+  float: left;
+  width: 45%;
+  margin: 0 20px;
+  color: #E47852;
+  /*border: 1px solid red;*/
+}
+
+.right {
+  float: right;
+  width: 45%;
+  margin: 0 20px;
+  color: #E47852;
+  /*border: 1px solid red;*/
+}
+#translation_options {
+  width: 100%;
+}
+
+#translation_options li {
+  display: inline;
+  padding: 0 20px 0 0;
 }
 
 th {
   text-align: left;
 }
-
-/*h1 {
-  text-align: center;
-}*/
-
 
 input[type=text], input[type=email], input[type=password] {
   width: 30%;
@@ -69,7 +111,7 @@ input[type=text], input[type=email], input[type=password] {
 }
 
 textarea {
-    width: 40%;
+    width: 100%;
     height: 300px;
     padding: 12px 20px;
     box-sizing: border-box;
@@ -90,11 +132,6 @@ button {
   border-radius: 5px;
 }
 
-#translation_options {
-  width: 100%;
-}
-
-#translation_options li {
-  display: inline;
-  padding: 0 20px 0 0;
+#profile {
+  color: #bf8900;
 }
