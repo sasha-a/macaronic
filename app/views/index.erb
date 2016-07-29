@@ -1,13 +1,19 @@
 <main class = "container">
 <% if logged_in? %>
-  <section class="left">
+  <section class="up">
       <form id="translate" action = "/" method = "post">
-        <textarea name="original_text"></textarea><br>
-        <input type = "submit" value = "Yoda It">
+        <textarea name="original_text" placeholder="Go ahead, try it..."></textarea>
+        <ul id="language_list">
+          <li class="yoda"><input type = "submit" value = "Yoda It"></li>
+          <li class="pirate"><input type = "submit" value = "Pirate It"></li>
+          <li class="urma"><input type = "submit" value = "Urmagerd It"></li>
+          <li class="pig"><input type = "submit" value = "Pig Latin It"></li>
+          <li class="girl"><input type = "submit" value = "Valley Girl It"></li>          <li><input type = "submit" value = "Valley Girl It"></li>
+        </ul>
       </form>
     </section>
 
-    <section class="right">
+    <section class="down">
       <div id="translation">
 
       </div>
@@ -16,4 +22,3 @@
   <p id="register_me">Hey! You should register. And login.</p>
 <% end %>
 </main>
-
