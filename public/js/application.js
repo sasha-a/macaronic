@@ -11,6 +11,7 @@ $(document).ready(function() {
       method: 'post',
       url: '/',
       data: data
+      // data: {version: }
     })
     .done(function(response) {
      $('#translation').append(response);
